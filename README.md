@@ -1,2 +1,8 @@
 # Assignment-1-GC200605831
-A JavaFX application that compares movie genres by average box office revenue, number of movies, and IMDb scores. Includes bar chart switching and detailed table view.
+
+This JavaFX application compares movie genres using:
+- Average box office revenue
+- Number of movies
+- Average IMDb score
+
+Bar charts is switched by radio buttons, and a tableView shows individual movie details.
