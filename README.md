@@ -9,6 +9,9 @@ Bar charts is switched by radio buttons, and a tableView shows individual movie 
 
 **Resource from:** [imdb.com](https://www.imdb.com/), [the-numbers.com](https://www.the-numbers.com/), [boxofficemojo.com](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo)
 
+※ I connected to MySQL using credentials from email, but I couldn't connect to AWS RDS.
+![Chart](images/connectionToMySQL.png)
+
 ## 🎬 Genre Bar Chart
 
 ![Chart](images/graphView1.png)
