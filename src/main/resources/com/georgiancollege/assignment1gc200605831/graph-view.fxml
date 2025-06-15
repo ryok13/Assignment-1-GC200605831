@@ -20,7 +20,7 @@
       </BarChart>
       <RadioButton fx:id="revenueRadio" layoutX="78.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg Revenue" />
       <RadioButton fx:id="maxRadio" layoutX="203.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Max Revenue" />
-      <RadioButton fx:id="scoreRadio" layoutX="322.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg IMDDb Score" />
+      <RadioButton fx:id="scoreRadio" layoutX="322.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg IMDb Score" />
       <Button fx:id="viewTableButton" layoutX="505.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-color: red; -fx-text-fill: white;" text="View Table">
          <font>
             <Font name="System Bold" size="12.0" />
