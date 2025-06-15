@@ -1,0 +1,55 @@
+CREATE DATABASE IF NOT EXISTS Ryo200605831;
+
+USE Ryo200605831;
+
+CREATE TABLE IF NOT EXISTS movies(
+                                     id INT PRIMARY KEY AUTO_INCREMENT,
+                                     title VARCHAR(255),
+    genre VARCHAR(100),
+    year INT,
+    director VARCHAR(255),
+    revenue DOUBLE,
+    imdb_score DOUBLE
+    );
+
+INSERT INTO movies (title, genre, year, director, revenue, imdb_score) VALUES
+       ('Booksmart', 'Comedy', 2019, 'Olivia Wilde', 24900000.0, 7.2),
+       ('Good Boys', 'Comedy', 2019, 'Gene Stupnitsky', 111000000.0, 6.8),
+       ('The Unbearable Weight of Massive Talent', 'Comedy', 2022, 'Tom Gormican', 29100000.0, 7.0),
+       ('Renfield', 'Comedy', 2023, 'Chris McKay', 26500000.0, 5.3),
+       ('Jumanji: Welcome to the Jungle', 'Comedy', 2017, 'Jake Kasdan', 963000000.0, 7.0),
+       ('Mission: Impossible・Rogue Nation', 'Action', 2015, 'Christopher McQuarrie', 688000000.0, 7.4),
+       ('John Wick: Chapter 4', 'Action', 2023, 'Chad Stahelski', 432000000.0, 8.1),
+       ('Mission: Impossible・Dead Reckoning', 'Action', 2023, 'Christopher McQuarrie', 571000000.0, 7.5),
+       ('Top Gun: Maverick', 'Action', 2022, 'Joseph Kosinski', 1490000000.0, 8.4),
+       ('Nobody', 'Action', 2021, 'Ilya Naishuller', 57500000.0, 7.4),
+       ('Mad Max: Fury Road', 'Fantasy', 2015, 'George Miller', 378000000.0, 8.1),
+       ('Puss in Boots: The Last Wish', 'Fantasy', 2022, 'Joel Crawford', 484000000.0, 7.8),
+       ('The Super Mario Bros. Movie', 'Fantasy', 2023, 'Aaron Horvath', 1360000000.0, 7.2),
+       ('The BFG', 'Fantasy', 2016, 'Steven Spielberg', 195200000.0, 6.7),
+       ('The Green Knight', 'Fantasy', 2021, 'David Lowery', 19000000.0, 6.6),
+       ('Talk to Me', 'Horror', 2023, 'Michael Philippou', 91000000.0, 7.0),
+       ('Us', 'Horror', 2019, 'Jordan Peele', 255000000.0, 6.9),
+       ('Hereditary', 'Horror', 2018, 'Ari Aster', 80000000.0, 7.3),
+       ('It Chapter Two', 'Horror', 2019, 'Andy Muschietti', 473000000.0, 6.5),
+       ('A Quiet Place Part II', 'Horror', 2021, 'John Krasinski', 297000000.0, 7.3),
+       ('Sicario', 'Thriller', 2015, 'Denis Villeneuve', 85000000.0, 7.6),
+       ('Anatomy of a Fall', 'Thriller', 2023, 'Justine Triet', 33600000.0, 7.7),
+       ('Wind River', 'Thriller', 2017, 'Taylor Sheridan', 45000000.0, 7.7),
+       ('Adrift', 'Thriller', 2018, 'Baltasar kur', 59900000.0, 6.6),
+       ('Wind River', 'Thriller', 2017, 'Taylor Sheridan', 45000000.0, 7.7),
+       ('The Lobster', 'Romance', 2015, 'Yorgos Lanthimos', 18000000.0, 7.1),
+       ('The Farewell', 'Romance', 2019, 'Lulu Wang', 23100000.0, 7.5),
+       ('The Big Sick', 'Romance', 2017, 'Michael Showalter', 56400000.0, 7.5),
+       ('La La Land', 'Romance', 2016, 'Damien Chazelle', 471000000.0, 8.0),
+       ('Call Me by Your Name', 'Romance', 2017, 'Luca Guadagnino', 43000000.0, 7.8),
+       ('Jurassic World', 'Adventure', 2015, 'Colin Trevorrow', 1670000000.0, 6.9),
+       ('The Revenant', 'Adventure', 2015, 'Alejandro Gonzalez', 533000000.0, 8.0),
+       ('The Secret Life of Walter Mitty', 'Adventure', 2015, 'Ben Stiller', 188000000.0, 7.3),
+       ('Free Solo', 'Adventure', 2018, 'Jimmy Chin', 29000000.0, 8.1),
+       ('Uncharted', 'Adventure', 2022, 'Ruben Fleischer', 407000000.0, 6.3),
+       ('The Martian', 'Science Fiction', 2015, 'Ridley Scott', 653000000.0, 8.0),
+       ('Tenet', 'Science Fiction', 2020, 'Christopher Nolan', 365000000.0, 7.3),
+       ('Dune: Part Two', 'Science Fiction', 2023, 'Denis Villeneuve', 711000000.0, 8.6),
+       ('Blade Runner 2049', 'Science Fiction', 2017, 'Denis Villeneuve', 267000000.0, 8.0),
+       ('Ad Astra', 'Science Fiction', 2019, 'James Gray', 135000000.0, 6.5);
