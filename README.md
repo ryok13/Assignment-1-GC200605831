@@ -7,7 +7,7 @@ This JavaFX application compares movie genres using:
 
 Bar charts is switched by radio buttons, and a tableView shows individual movie details.
 
-**Resource from:** [https://www.imdb.com/](https://www.imdb.com/)
+**Resource from:** [imdb.com](https://www.imdb.com/), [the-numbers.com](https://www.the-numbers.com/), [boxofficemojo.com](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo)
 
 ## 🎬 Genre Bar Chart
 
