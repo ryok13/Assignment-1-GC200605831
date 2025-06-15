@@ -27,6 +27,7 @@ public class TableController {
     public void initialize() {
         ObservableList<Movie> observableMovies = FXCollections.observableArrayList();
 
+        // Fetch data from database
         try (Connection conn = SQLConnector.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT * FROM movies")) {
@@ -48,7 +49,7 @@ public class TableController {
             e.printStackTrace();
         }
 
-        // カラムの定義とバインド
+        // Define columns and bind them to Movie properties
         TableColumn<Movie, String> idCol = new TableColumn<>("Id");
         idCol.setCellValueFactory(new PropertyValueFactory<>("id"));
 
@@ -70,11 +71,10 @@ public class TableController {
         TableColumn<Movie, Double> scoreCol = new TableColumn<>("IMDb Score");
         scoreCol.setCellValueFactory(new PropertyValueFactory<>("imdbScore"));
 
-        // テーブルにカラムを追加
         tableView.getColumns().addAll(idCol, titleCol, genreCol, yearCol, directorCol, revenueCol, scoreCol);
         tableView.setItems(observableMovies);
 
-        // ボタンでグラフ画面に戻る処理
+        // Return to graph view
         backToGraph.setOnAction(e -> switchToGraphScene());
     }
 

@@ -15,6 +15,7 @@ public class Movie {
         this.imdbScore = imdbScore;
     }
 
+    // Getters and setters
     public int getId() {
         return id;
     }
@@ -56,7 +57,7 @@ public class Movie {
     }
 
     public double getRevenue() {
-        return revenue / 100;  // 表示時に100分の1で返す
+        return revenue / 100;  // return 1/100 when display
     }
 
     public void setRevenue(double revenue) {

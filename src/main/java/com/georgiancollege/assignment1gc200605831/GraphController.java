@@ -34,25 +34,25 @@ public class GraphController {
 
     @FXML
     public void initialize() {
-        // MySQLからデータを読み込む
+        // Load movie data from MySQL
         movieList = fetchMoviesFromDB();
 
-        // ToggleGroup 設定
+        // Set up radio buttons
         revenueRadio.setToggleGroup(toggleGroup);
         maxRadio.setToggleGroup(toggleGroup);
         scoreRadio.setToggleGroup(toggleGroup);
-        revenueRadio.setSelected(true);
+        revenueRadio.setSelected(true); // Default selection
 
-        // 初期描画
         updateChart();
 
-        // ラジオボタン切り替えイベント
+        // Update chart on radio button selection change
         toggleGroup.selectedToggleProperty().addListener((observable, oldValue, newValue) -> updateChart());
 
-        // テーブル画面への切り替えボタン
+        // Set up navigation to table view
         viewTableButton.setOnAction(event -> switchToTableScene());
     }
 
+    // Populate the bar chart with selected metric
     private void updateChart() {
         barChart.getData().clear();
 
@@ -79,6 +79,7 @@ public class GraphController {
         barChart.getData().add(series);
     }
 
+    // Switch to the table view scene
     private void switchToTableScene() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("table-view.fxml"));
@@ -90,6 +91,7 @@ public class GraphController {
         }
     }
 
+    // Retrieve movie data from MySQL database
     private List<Movie> fetchMoviesFromDB() {
         List<Movie> movies = new ArrayList<>();
 

@@ -50,11 +50,11 @@ public class GenreStats {
         this.averageScore = averageScore;
     }
 
+    // Calculates statistics for each genre from the movie list
     public static List<GenreStats> calculateFrom(List<Movie> movieList) {
-        // ジャンル名ごとに対応する Movie のリストを格納するマップ
         Map<String, List<Movie>> genreMap = new HashMap<>();
 
-        // まずジャンルごとに分類する
+        // Group movies by genre
         for (Movie m : movieList) {
             String genre = m.getGenre();
             if (!genreMap.containsKey(genre)) {
@@ -63,7 +63,7 @@ public class GenreStats {
             genreMap.get(genre).add(m);
         }
 
-        // 結果を格納するリスト
+        // Aggregate revenue and IMDb scores for each genre
         List<GenreStats> statsList = new ArrayList<>();
 
         // 各ジャンルに対して集計処理を行う
@@ -88,7 +88,6 @@ public class GenreStats {
             double avgRevenue = totalRevenue / movies.size();
             double avgScore = totalScore / movies.size();
 
-            // 結果を GenreStats として追加
             GenreStats stats = new GenreStats(genre, avgRevenue, maxRevenue, avgScore);
             statsList.add(stats);
         }
