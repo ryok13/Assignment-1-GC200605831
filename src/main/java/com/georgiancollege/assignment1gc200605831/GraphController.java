@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
@@ -71,6 +72,7 @@ public class GraphController {
             }
         } else if (scoreRadio.isSelected()) {
             series.setName("Average IMDb Score");
+            barChart.setCategoryGap(7); // Distance between bars
             for (GenreStats g : stats) {
                 series.getData().add(new XYChart.Data<>(g.getGenre(), g.getAverageScore()));
             }

@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.georgiancollege.assignment1gc200605831.GraphController">
+<AnchorPane prefHeight="457.0" prefWidth="644.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.georgiancollege.assignment1gc200605831.GraphController">
    <children>
-      <BarChart fx:id="barChart" layoutX="24.0" layoutY="14.0" prefHeight="309.0" prefWidth="551.0">
+      <BarChart fx:id="barChart" layoutX="14.0" layoutY="20.0" prefHeight="346.0" prefWidth="611.0">
         <xAxis>
           <CategoryAxis side="BOTTOM" tickLabelFill="WHITE" />
         </xAxis>
@@ -18,10 +18,10 @@
           <NumberAxis side="LEFT" tickLabelFill="WHITE" />
         </yAxis>
       </BarChart>
-      <RadioButton fx:id="revenueRadio" layoutX="78.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg Revenue" />
-      <RadioButton fx:id="maxRadio" layoutX="203.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Max Revenue" />
-      <RadioButton fx:id="scoreRadio" layoutX="322.0" layoutY="354.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg IMDb Score" />
-      <Button fx:id="viewTableButton" layoutX="505.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-color: red; -fx-text-fill: white;" text="View Table">
+      <RadioButton fx:id="revenueRadio" layoutX="76.0" layoutY="402.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg Revenue" />
+      <RadioButton fx:id="maxRadio" layoutX="229.0" layoutY="402.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Max Revenue" />
+      <RadioButton fx:id="scoreRadio" layoutX="372.0" layoutY="402.0" mnemonicParsing="false" style="-fx-text-fill: yellow;" text="Avg IMDb Score" />
+      <Button fx:id="viewTableButton" layoutX="528.0" layoutY="398.0" mnemonicParsing="false" style="-fx-background-color: red; -fx-text-fill: white;" text="View Table">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
