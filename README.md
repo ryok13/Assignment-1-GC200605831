@@ -9,20 +9,20 @@ Bar charts is switched by radio buttons, and a tableView shows individual movie 
 
 **Resource from:** [imdb.com](https://www.imdb.com/), [the-numbers.com](https://www.the-numbers.com/), [boxofficemojo.com](https://www.boxofficemojo.com/?ref_=bo_nb_tt_mojologo)
 
-※ I connected to MySQL using credentials from email, but I couldn't connect to AWS RDS.
-![Chart](images/connectionToMySQL.png)
+※ I connected to MySQL using credentials from email, but not to AWS RDS.
+![Chart](src/main/resources/com/georgiancollege/assignment1gc200605831/images/connectionToMySQL.png)
 
 ## 🎬 Genre Bar Chart
 
-![Chart](images/graphView1.png)
-![Chart](images/graphView2.png)
-![Chart](images/graphView3.png)
+![Chart](src/main/resources/com/georgiancollege/assignment1gc200605831/images/graphView1.png)
+![Chart](src/main/resources/com/georgiancollege/assignment1gc200605831/images/graphView2.png)
+![Chart](src/main/resources/com/georgiancollege/assignment1gc200605831/images/graphView3.png)
 
 
 ## 📋 Movie Table
 
-![Chart](images/tableView.png)
+![Chart](src/main/resources/com/georgiancollege/assignment1gc200605831/images/tableView.png)
 
 ## 🎥 Demo Video
 
-You can watch the demo video [here](https://go.screenpal.com/watch/cT1oYKnXOoc)
+You can watch the demo video [here](https://go.screenpal.com/watch/cT1DVynXO47)

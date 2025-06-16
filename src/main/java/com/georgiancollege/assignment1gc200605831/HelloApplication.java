@@ -3,6 +3,7 @@ package com.georgiancollege.assignment1gc200605831;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("graph-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 650, 450);
         stage.setTitle("Movie Genre Comparison");
+        stage.getIcons().add(new Image(HelloApplication.class.getResourceAsStream("images/movie_icon.png")));
         stage.setScene(scene);
         stage.show();
     }
