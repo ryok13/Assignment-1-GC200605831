@@ -97,9 +97,11 @@ public class GraphController {
     private List<Movie> fetchMoviesFromDB() {
         List<Movie> movies = new ArrayList<>();
 
+        String query = "SELECT * FROM movies";
+
         try (Connection conn = SQLConnector.getConnection();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery("SELECT * FROM movies")) {
+             PreparedStatement ps = conn.prepareStatement(query);
+             ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
                 Movie m = new Movie(
