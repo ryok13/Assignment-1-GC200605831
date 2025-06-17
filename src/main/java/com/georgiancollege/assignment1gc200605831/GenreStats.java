@@ -66,7 +66,6 @@ public class GenreStats {
         // Aggregate revenue and IMDb scores for each genre
         List<GenreStats> statsList = new ArrayList<>();
 
-        // 各ジャンルに対して集計処理を行う
         for (String genre : genreMap.keySet()) {
             List<Movie> movies = genreMap.get(genre);
 

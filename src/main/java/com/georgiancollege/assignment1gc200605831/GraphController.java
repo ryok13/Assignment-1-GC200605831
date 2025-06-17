@@ -29,7 +29,6 @@ public class GraphController {
 
     private ToggleGroup toggleGroup = new ToggleGroup();
 
-    // 映画データ（本来はDBやファイルから読み込み）
     private List<Movie> movieList;
 
 
@@ -97,11 +96,10 @@ public class GraphController {
     private List<Movie> fetchMoviesFromDB() {
         List<Movie> movies = new ArrayList<>();
 
-        String query = "SELECT * FROM movies";
 
         try (Connection conn = SQLConnector.getConnection();
-             PreparedStatement ps = conn.prepareStatement(query);
-             ResultSet rs = ps.executeQuery()) {
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery("SELECT * FROM movies")) {
 
             while (rs.next()) {
                 Movie m = new Movie(
