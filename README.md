@@ -1,6 +1,18 @@
-# Assignment-1-GC200605831
+# Movie Genre Analytics
 
-This JavaFX application compares movie genres using:
+### 🇯🇵 今回のJavaFXアプリケーションは、映画ジャンルごとのデータを比較・分析することを目的としています。
+
+以下の指標を用いて、ジャンル間の違いを可視化しています。
+・平均興行収入  
+・ジャンル別の最高興行収入  
+・平均IMDbスコア  
+
+ラジオボタンを切り替えることで表示する棒グラフを変更でき、  
+TableView では各映画の詳細情報を確認できます。
+
+---
+
+### 🇺🇸 This JavaFX application compares movie genres using:
 - Average box office revenue
 - Highest revenue of movie each genre
 - Average IMDb score
